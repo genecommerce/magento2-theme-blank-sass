@@ -4,7 +4,7 @@
 
 @mixin lib-main-navigation(
     $_nav__indent-side                       : 15px,
-    $_nav-background-color                   : $secondary__color__light,
+    $_nav-background-color                   : $navigation__background,
     $_nav-border                             : none,
     $_nav-level0-font-size                   : 16px,
     $_nav-level0-font-weight                 : $font-weight__bold,
@@ -209,13 +209,13 @@
 //  _____________________________________________
 
 @mixin lib-main-navigation-desktop(
-    $_nav-background-color                   : $color-gray94,
+    $_nav-background-color                   : $navigation-desktop__background,
     $_nav-border                             : none,
     $_nav-font-size                          : inherit,
     $_nav-font-weight                        : $font-weight__bold,
 
-    $_nav-level0-item-line-height            : 53px,
-    $_nav-level0-item-margin                 : 0 $indent__s 0 0,
+    $_nav-level0-item-line-height            : $navigation-desktop-level0-item__line-height,
+    $_nav-level0-item-margin                 : $navigation-desktop-level0-item__margin,
     $_nav-level0-item-padding                : 0 12px,
 
     $_nav-level0-item-background-color       : inherit,
