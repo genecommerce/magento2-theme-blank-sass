@@ -40,13 +40,13 @@
     $_submenu-item-color                     : $color-gray34,
     $_submenu-item-text-decoration           : inherit,
 
-    $_submenu-item-background-color-active   : inherit,
-    $_submenu-item__active__border           : 8px,
-    $_submenu-item__active__border-color     : $color-orange-red1,
-    $_submenu-item__active__border-style     : solid,
-    $_submenu-item__active__border-width     : 0 0 0 8px,
-    $_submenu-item-color-active              : inherit,
-    $_submenu-item-text-decoration-active    : inherit
+    $_submenu-item-background-color-active   : $submenu-item-background-color-active,
+    $_submenu-item__active__border           : $submenu-item__active__border,
+    $_submenu-item__active__border-color     : $submenu-item__active__border-color,
+    $_submenu-item__active__border-style     : $submenu-item__active__border-style,
+    $_submenu-item__active__border-width     : $submenu-item__active__border-width,
+    $_submenu-item-color-active              : $submenu-item-color-active ,
+    $_submenu-item-text-decoration-active    : $submenu-item-text-decoration-active
 ) {
     .navigation {
         background: $_nav-background-color;
@@ -260,12 +260,12 @@
     $_submenu-item-color-hover               : $primary__color,
     $_submenu-item-text-decoration-hover     : none,
 
-    $_submenu-item-background-color-active   : inherit,
-    $_submenu-item__active__border-color     : $color-orange-red1,
-    $_submenu-item__active__border-style     : solid,
-    $_submenu-item__active__border-width     : 0 0 0 3px,
-    $_submenu-item-color-active              : inherit,
-    $_submenu-item-text-decoration-active    : inherit
+    $_submenu-item-background-color-active   : $submenu-item-background-color-active,
+    $_submenu-item__active__border-color     : $submenu-item__active__border-color,
+    $_submenu-item__active__border-style     : $submenu-item__active__border-style,
+    $_submenu-item__active__border-width     : $submenu-item__active__border-width,
+    $_submenu-item-color-active              : $submenu-item-color-active,
+    $_submenu-item-text-decoration-active    : $submenu-item-text-decoration-active
 ) {
 
     .navigation {
