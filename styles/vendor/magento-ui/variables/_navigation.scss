@@ -1,0 +1,23 @@
+
+//
+//  Navigation variables
+//  _____________________________________________
+
+// Base
+$navigation__background: $secondary__color__light;
+
+// Desktop
+$navigation-desktop__background: $color-gray94;
+$navigation-desktop-level0-item__line-height: 53px;
+$navigation-desktop-level0-item__margin: 0 $indent__s 0 0;
+
+
+// Active / current sub item
+$submenu-item-background-color-active   : inherit !default;
+$submenu-item__active__border           : 8px !default;
+$submenu-item__active__border-color     : $color-orange-red1 !default;
+$submenu-item__active__border-style     : solid !default;
+$submenu-item__active__border-width     : 0 0 0 8px !default;
+$submenu-item-color-active              : inherit !default;
+$submenu-item-text-decoration-active    : inherit !default;
+

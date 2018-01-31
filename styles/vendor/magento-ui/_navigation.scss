@@ -4,7 +4,7 @@
 
 @mixin lib-main-navigation(
     $_nav__indent-side                       : 15px,
-    $_nav-background-color                   : $secondary__color__light,
+    $_nav-background-color                   : $navigation__background,
     $_nav-border                             : none,
     $_nav-level0-font-size                   : 16px,
     $_nav-level0-font-weight                 : $font-weight__bold,
@@ -40,13 +40,13 @@
     $_submenu-item-color                     : $color-gray34,
     $_submenu-item-text-decoration           : inherit,
 
-    $_submenu-item-background-color-active   : inherit,
-    $_submenu-item__active__border           : 8px,
-    $_submenu-item__active__border-color     : $color-orange-red1,
-    $_submenu-item__active__border-style     : solid,
-    $_submenu-item__active__border-width     : 0 0 0 8px,
-    $_submenu-item-color-active              : inherit,
-    $_submenu-item-text-decoration-active    : inherit
+    $_submenu-item-background-color-active   : $submenu-item-background-color-active,
+    $_submenu-item__active__border           : $submenu-item__active__border,
+    $_submenu-item__active__border-color     : $submenu-item__active__border-color,
+    $_submenu-item__active__border-style     : $submenu-item__active__border-style,
+    $_submenu-item__active__border-width     : $submenu-item__active__border-width,
+    $_submenu-item-color-active              : $submenu-item-color-active ,
+    $_submenu-item-text-decoration-active    : $submenu-item-text-decoration-active
 ) {
     .navigation {
         background: $_nav-background-color;
@@ -209,13 +209,13 @@
 //  _____________________________________________
 
 @mixin lib-main-navigation-desktop(
-    $_nav-background-color                   : $color-gray94,
+    $_nav-background-color                   : $navigation-desktop__background,
     $_nav-border                             : none,
     $_nav-font-size                          : inherit,
     $_nav-font-weight                        : $font-weight__bold,
 
-    $_nav-level0-item-line-height            : 53px,
-    $_nav-level0-item-margin                 : 0 $indent__s 0 0,
+    $_nav-level0-item-line-height            : $navigation-desktop-level0-item__line-height,
+    $_nav-level0-item-margin                 : $navigation-desktop-level0-item__margin,
     $_nav-level0-item-padding                : 0 12px,
 
     $_nav-level0-item-background-color       : inherit,
@@ -260,12 +260,12 @@
     $_submenu-item-color-hover               : $primary__color,
     $_submenu-item-text-decoration-hover     : none,
 
-    $_submenu-item-background-color-active   : inherit,
-    $_submenu-item__active__border-color     : $color-orange-red1,
-    $_submenu-item__active__border-style     : solid,
-    $_submenu-item__active__border-width     : 0 0 0 3px,
-    $_submenu-item-color-active              : inherit,
-    $_submenu-item-text-decoration-active    : inherit
+    $_submenu-item-background-color-active   : $submenu-item-background-color-active,
+    $_submenu-item__active__border-color     : $submenu-item__active__border-color,
+    $_submenu-item__active__border-style     : $submenu-item__active__border-style,
+    $_submenu-item__active__border-width     : $submenu-item__active__border-width,
+    $_submenu-item-color-active              : $submenu-item-color-active,
+    $_submenu-item-text-decoration-active    : $submenu-item-text-decoration-active
 ) {
 
     .navigation {
